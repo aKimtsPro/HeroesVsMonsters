@@ -1,4 +1,4 @@
-package be.bstorm.akimts.hvm.models;
+package be.bstorm.akimts.hvm.characters.monsters;
 
 public interface ILootGold {
 

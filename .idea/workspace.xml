@@ -1,17 +1,59 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e5c1cc3f-d318-4c80-922b-f7cadeac7fcc" name="Changes" comment="" />
+    <list default="true" id="e5c1cc3f-d318-4c80-922b-f7cadeac7fcc" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/jpa-buddy.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HeroesVsMonsters.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/be/bstorm/akimts/hvm/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/be/bstorm/akimts/hvm/characters/Character.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/be/bstorm/akimts/hvm/characters/heroes/Dwarf.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/be/bstorm/akimts/hvm/characters/heroes/Hero.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/be/bstorm/akimts/hvm/characters/heroes/Human.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/be/bstorm/akimts/hvm/characters/monsters/Dragoon.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/be/bstorm/akimts/hvm/characters/monsters/ILootGold.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/be/bstorm/akimts/hvm/characters/monsters/ILootLeather.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/be/bstorm/akimts/hvm/characters/monsters/Monster.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/be/bstorm/akimts/hvm/characters/monsters/Orc.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/be/bstorm/akimts/hvm/characters/monsters/Wolf.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/be/bstorm/akimts/hvm/exceptions/AlreadyPlacedException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/be/bstorm/akimts/hvm/exceptions/PlaceOccupiedException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/be/bstorm/akimts/hvm/exceptions/PositionOutBoundsException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/be/bstorm/akimts/hvm/game/Game.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/be/bstorm/akimts/hvm/game/map/GameObject.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/be/bstorm/akimts/hvm/game/map/Map.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/be/bstorm/akimts/hvm/game/map/Position.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/be/bstorm/akimts/hvm/tools/Dice.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/be/bstorm/akimts/hvm/tools/Tools.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
   <component name="ProjectId" id="2Ha7tStd69LJuOEhqgSL4vickyP" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -20,6 +62,7 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false"
   }
 }]]></component>
@@ -31,7 +74,22 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1668511557163</updated>
+      <workItem from="1668511559062" duration="10756000" />
     </task>
     <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>

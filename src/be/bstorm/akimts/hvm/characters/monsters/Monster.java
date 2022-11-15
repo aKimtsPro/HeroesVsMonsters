@@ -1,11 +1,11 @@
-package be.bstorm.akimts.hvm.models;
+package be.bstorm.akimts.hvm.characters.monsters;
 
-import be.bstorm.akimts.hvm.models.Character;
+import be.bstorm.akimts.hvm.characters.Character;
 
 public abstract class Monster extends Character {
 
-    public Monster(int bonusStamina, int bonusStrength) {
-        super(bonusStamina, bonusStrength);
+    public Monster(int bonusStamina, int bonusStrength, char representation) {
+        super(bonusStamina, bonusStrength, representation);
     }
 
 }

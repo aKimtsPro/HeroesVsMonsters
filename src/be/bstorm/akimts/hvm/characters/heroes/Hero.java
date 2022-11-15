@@ -1,18 +1,24 @@
-package be.bstorm.akimts.hvm.models;
+package be.bstorm.akimts.hvm.characters.heroes;
+
+import be.bstorm.akimts.hvm.characters.Character;
+import be.bstorm.akimts.hvm.characters.monsters.ILootGold;
+import be.bstorm.akimts.hvm.characters.monsters.ILootLeather;
+import be.bstorm.akimts.hvm.characters.monsters.Monster;
 
 public abstract class Hero extends Character {
 
+    public static final char representation = 'H';
     private int gold;
     private int leather;
 
     public Hero(int bonusStamina, int bonusStrength) {
-        super(bonusStamina, bonusStrength);
+        super(bonusStamina, bonusStrength, representation);
     }
 
     public void loot(Monster monster){
-        if( monster instanceof ILootGold )
+        if( monster instanceof ILootGold)
             this.gold += ((ILootGold) monster).getGold();
-        if( monster instanceof  ILootLeather )
+        if( monster instanceof ILootLeather)
             this.leather += ((ILootLeather) monster).getLeather();
     }
 

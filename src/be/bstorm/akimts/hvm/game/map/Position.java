@@ -1,4 +1,4 @@
-package be.bstorm.akimts.hvm.game;
+package be.bstorm.akimts.hvm.game.map;
 
 public class Position {
 

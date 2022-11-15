@@ -1,4 +1,4 @@
-package be.bstorm.akimts.hvm.game;
+package be.bstorm.akimts.hvm.game.map;
 
 public class GameObject {
 
@@ -25,5 +25,9 @@ public class GameObject {
 
     public Position getPosition() {
         return position;
+    }
+
+    void clearPosition(){
+        this.position = null;
     }
 }

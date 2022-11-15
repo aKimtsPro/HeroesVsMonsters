@@ -1,8 +1,9 @@
-package be.bstorm.akimts.hvm.models;
+package be.bstorm.akimts.hvm.characters;
 
+import be.bstorm.akimts.hvm.game.map.GameObject;
 import be.bstorm.akimts.hvm.tools.Tools;
 
-public abstract class Character {
+public abstract class Character extends GameObject {
 
     private final int stamina;
     private final int strength;
@@ -13,7 +14,8 @@ public abstract class Character {
 
     private int hp;
 
-    public Character(int bonusStamina, int bonusStrength){
+    public Character(int bonusStamina, int bonusStrength, char representation){
+        super(representation);
         this.bonusStamina = bonusStamina;
         this.bonusStrength = bonusStrength;
         this.stamina = Tools.best3Of4();
@@ -23,12 +25,12 @@ public abstract class Character {
     }
 
 
-    public void hit(Character character){
+    public int hit(Character character){
         int dmg = Tools.D4.cast() + Tools.modBasedOn( this.getStrength() );
         if(character.hp < dmg )
-            character.hp = 0;
+            return character.hp - (character.hp = 0);
         else
-            character.hp -= dmg;
+            return character.hp - (character.hp -= dmg);
     }
 
     public void heal(){
