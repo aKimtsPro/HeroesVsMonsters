@@ -1,35 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e5c1cc3f-d318-4c80-922b-f7cadeac7fcc" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jpa-buddy.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/HeroesVsMonsters.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/be/bstorm/akimts/hvm/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/be/bstorm/akimts/hvm/characters/Character.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/be/bstorm/akimts/hvm/characters/heroes/Dwarf.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/be/bstorm/akimts/hvm/characters/heroes/Hero.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/be/bstorm/akimts/hvm/characters/heroes/Human.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/be/bstorm/akimts/hvm/characters/monsters/Dragoon.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/be/bstorm/akimts/hvm/characters/monsters/ILootGold.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/be/bstorm/akimts/hvm/characters/monsters/ILootLeather.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/be/bstorm/akimts/hvm/characters/monsters/Monster.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/be/bstorm/akimts/hvm/characters/monsters/Orc.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/be/bstorm/akimts/hvm/characters/monsters/Wolf.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/be/bstorm/akimts/hvm/exceptions/AlreadyPlacedException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/be/bstorm/akimts/hvm/exceptions/PlaceOccupiedException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/be/bstorm/akimts/hvm/exceptions/PositionOutBoundsException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/be/bstorm/akimts/hvm/game/Game.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/be/bstorm/akimts/hvm/game/map/GameObject.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/be/bstorm/akimts/hvm/game/map/Map.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/be/bstorm/akimts/hvm/game/map/Position.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/be/bstorm/akimts/hvm/tools/Dice.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/be/bstorm/akimts/hvm/tools/Tools.java" afterDir="false" />
+    <list default="true" id="e5c1cc3f-d318-4c80-922b-f7cadeac7fcc" name="Changes" comment="init commit 2 electric boogaloo">
+      <change afterPath="$PROJECT_DIR$/src/be/bstorm/akimts/hvm/exceptions/IllegalMoveException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/be/bstorm/akimts/hvm/game/Interface.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/be/bstorm/akimts/hvm/game/Move.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/be/bstorm/akimts/hvm/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/be/bstorm/akimts/hvm/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/be/bstorm/akimts/hvm/characters/Character.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/be/bstorm/akimts/hvm/characters/Character.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/be/bstorm/akimts/hvm/characters/heroes/Dwarf.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/be/bstorm/akimts/hvm/characters/heroes/Dwarf.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/be/bstorm/akimts/hvm/characters/heroes/Hero.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/be/bstorm/akimts/hvm/characters/heroes/Hero.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/be/bstorm/akimts/hvm/characters/heroes/Human.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/be/bstorm/akimts/hvm/characters/heroes/Human.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/be/bstorm/akimts/hvm/characters/monsters/Monster.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/be/bstorm/akimts/hvm/characters/monsters/Monster.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/be/bstorm/akimts/hvm/game/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/be/bstorm/akimts/hvm/game/Game.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/be/bstorm/akimts/hvm/game/map/GameObject.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/be/bstorm/akimts/hvm/game/map/GameObject.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/be/bstorm/akimts/hvm/game/map/Map.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/be/bstorm/akimts/hvm/game/map/Map.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/be/bstorm/akimts/hvm/game/map/Position.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/be/bstorm/akimts/hvm/game/map/Position.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/be/bstorm/akimts/hvm/tools/Dice.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/be/bstorm/akimts/hvm/tools/Dice.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/be/bstorm/akimts/hvm/tools/Tools.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/be/bstorm/akimts/hvm/tools/Tools.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,14 +46,34 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;
   }
-}]]></component>
+}</component>
+  <component name="RunManager">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="be.bstorm.akimts.hvm.Main" />
+      <module name="HeroesVsMonsters" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="be.bstorm.akimts.hvm.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Main" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -75,6 +83,7 @@
       <option name="presentableId" value="Default" />
       <updated>1668511557163</updated>
       <workItem from="1668511559062" duration="10756000" />
+      <workItem from="1668555127839" duration="14579000" />
     </task>
     <servers />
   </component>

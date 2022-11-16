@@ -21,19 +21,23 @@ public class Map {
         map = new GameObject[height][length];
     }
 
-    private boolean isPlaceFree(int x, int y){
+    public boolean isPlaceFree(int x, int y){
         return map[x][y] == null;
     }
 
-    private GameObject get(int x, int y){
-        if( x < 0 || y < 0 || y >= map.length || x >= map[y].length )
+    public boolean isPlaceInvalid(int x, int y){
+        return x < 0 || y < 0 || x >= map.length || y >= map[x].length;
+    }
+    public GameObject get(int x, int y){
+        if(isPlaceInvalid(x, y))
             throw new PositionOutBoundsException(x, y, this);
 
         return map[x][y];
     }
 
-    private boolean place(int x, int y, GameObject gameObject){
-        if( x < 0 || y < 0 || y >= map.length || x >= map[y].length )
+    public boolean place(int x, int y, GameObject gameObject){
+
+        if(isPlaceInvalid(x, y))
             throw new PositionOutBoundsException(x, y, this);
 
         if(map[x][y] != null)
@@ -41,13 +45,24 @@ public class Map {
 
 
         map[x][y] = gameObject;
-        gameObject.setPosition(x,y);
-        return gameObjects.add(gameObject);
+        if( gameObject != null ) {
+            gameObject.setPosition(x, y);
+            return gameObjects.add(gameObject);
+        }
+        else
+            return false;
+    }
+
+    public boolean place(Position position, GameObject gameObject){
+        if( position == null )
+            throw new IllegalArgumentException( "Position cannot be null" );
+
+        return place(position.getX(), position.getY(), gameObject);
     }
 
 
     private GameObject replace(int x, int y, GameObject gameObject){
-        if( x < 0 || y < 0 || y >= map.length || x >= map[y].length )
+        if(isPlaceInvalid(x, y))
             throw new PositionOutBoundsException(x, y, this);
 
         GameObject previous = get(x,y);
@@ -61,7 +76,7 @@ public class Map {
     }
 
     public boolean moveTo(GameObject toMove, int x, int y){
-        if( x < 0 || y < 0 || y >= map.length || x >= map[y].length )
+        if(isPlaceInvalid(x, y))
             throw new PositionOutBoundsException(x, y, this);
 
         if( toMove.getPosition() == null )
@@ -80,7 +95,7 @@ public class Map {
         if( gameObject == null || gameObject.getPosition() == null )
             throw new IllegalArgumentException("the objet should not be null and it should be placed");
 
-        replace(gameObject.getPosition().getX(), gameObject.getPosition().getY(), null);
+        map[gameObject.getPosition().getX()][gameObject.getPosition().getY()] = null;
         gameObject.clearPosition();
         gameObjects.remove(gameObject);
     }
@@ -93,5 +108,27 @@ public class Map {
         return length;
     }
 
+    @Override
+    public String toString() {
 
+        StringBuilder sb = new StringBuilder();
+
+        sb.append("-".repeat(3*height + 2));
+        sb.append('\n');
+        for (int i = 0; i < length; i++) {
+
+            sb.append('|');
+            for (int j = 0; j < height; j++) {
+                sb.append(' ');
+                sb.append( map[i][j] == null ? '_' : map[i][j].getRep() );
+                sb.append(' ');
+            }
+            sb.append('|');
+            sb.append('\n');
+        }
+        sb.append("-".repeat(3*height + 2));
+        sb.append('\n');
+
+        return sb.toString();
+    }
 }

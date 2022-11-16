@@ -10,15 +10,17 @@ public abstract class Hero extends Character {
     public static final char representation = 'H';
     private int gold;
     private int leather;
+    private final String name;
 
-    public Hero(int bonusStamina, int bonusStrength) {
+    public Hero(String name,int bonusStamina, int bonusStrength) {
         super(bonusStamina, bonusStrength, representation);
+        this.name = name;
     }
 
     public void loot(Monster monster){
-        if( monster instanceof ILootGold)
+        if( monster instanceof ILootGold )
             this.gold += ((ILootGold) monster).getGold();
-        if( monster instanceof ILootLeather)
+        if( monster instanceof ILootLeather )
             this.leather += ((ILootLeather) monster).getLeather();
     }
 
@@ -38,15 +40,23 @@ public abstract class Hero extends Character {
         return gold;
     }
 
-    public void setGold(int gold) {
-        this.gold = gold;
-    }
 
     public int getLeather() {
         return leather;
     }
 
-    public void setLeather(int leather) {
-        this.leather = leather;
+
+    public String getName() {
+        return name;
+    }
+
+    @Override
+    public String toString() {
+        return getName() + " :" +
+                "\n - RACE: " + getClass().getSimpleName() +
+                "\n - STR: "+getStrength() +
+                "\n - END: "+getStamina()+
+                "\n - PV:  "+getHp()+"/"+getHpMax() +
+                "\n - GOLD: "+ getGold() + " | LEATHER: " + getLeather();
     }
 }

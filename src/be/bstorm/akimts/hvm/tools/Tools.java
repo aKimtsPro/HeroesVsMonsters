@@ -4,11 +4,11 @@ import be.bstorm.akimts.hvm.characters.heroes.Dwarf;
 import be.bstorm.akimts.hvm.characters.heroes.Hero;
 import be.bstorm.akimts.hvm.characters.heroes.Human;
 
-import java.util.Random;
-
 public abstract class Tools {
 
-    private final String[] heroesNames = {
+    private Tools(){}
+
+    private static final String[] heroesNames = {
             "Francois I",
             "Francois II",
             "Huong",
@@ -48,16 +48,16 @@ public abstract class Tools {
     }
 
 
-    public Hero getRandomHero(){
+    public static Hero getRandomHero(){
 
         String name = heroesNames[ (int)(Math.random()*12) ];
 
         int rdmized = (int)(Math.random()*2);
         if( rdmized == 0 ){
-            return new Human();
+            return new Human(name);
         }
         else {
-            return new Dwarf();
+            return new Dwarf(name);
         }
 
     }

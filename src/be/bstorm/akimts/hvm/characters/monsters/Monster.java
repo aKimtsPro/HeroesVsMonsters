@@ -8,4 +8,12 @@ public abstract class Monster extends Character {
         super(bonusStamina, bonusStrength, representation);
     }
 
+    @Override
+    public String toString() {
+        return getClass().getSimpleName() + " :" +
+                "\n - STR: "+getStrength() +
+                "\n - END: "+getStamina()+
+                "\n - PV:  "+getHp()+"/"+getHpMax();
+    }
+
 }

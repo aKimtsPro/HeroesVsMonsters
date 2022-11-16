@@ -10,13 +10,12 @@ public class GameObject {
     }
 
     public GameObject(int positionX, int positionY, char representation) {
-        this.position = new Position(positionX, positionY);
+        this.position = Position.of(positionX, positionY);
         this.representation = representation;
     }
 
     void setPosition(int x, int y){
-        if( position == null )
-            this.position = new Position(x,y);
+        this.position = Position.of(x,y);
     }
 
     public char getRep() {
